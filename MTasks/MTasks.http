@@ -1,0 +1,6 @@
+@MTasks_HostAddress = http://localhost:5190
+
+GET {{MTasks_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
