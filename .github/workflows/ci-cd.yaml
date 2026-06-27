@@ -27,7 +27,7 @@ jobs:
     - id: test
       if: steps.build.outcome == 'success'
       name: Test
-      run: dotnet test "MTasks.Tests/MTasks.Test.csproj" --collect "XPlat Code Coverage" --DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura
+      run: dotnet test "MTasks.Tests/MTasks.Test.csproj" --collect "XPlat Code Coverage"
 
     - id: coverage
       name: Code Coverage Report
